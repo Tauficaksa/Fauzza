@@ -1,0 +1,140 @@
+.navBar_bigScreen {
+    height: 10dvh;
+    /* background-color: aqua; */
+    border-bottom: 1px solid rgb(203, 202, 202);
+
+    display: flex;
+    flex-direction: row;
+}
+
+.navBar_logoDiv{
+    height: inherit;
+    flex: 1;
+    /* background-color: antiquewhite; */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{
+    width: 180px;
+}
+
+.navBar_navDiv{
+    height: inherit;
+    flex: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 10px;
+}
+
+button{
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 50px;
+
+    border: none;
+    background-color: white;
+
+    font-weight: bold;
+    font-size: medium;
+    color: #f5f5f5;
+
+    &:hover{
+        background-color: #f5f5f5;
+        cursor:default;
+        .link{
+            color: black;
+        }
+    }
+
+    &:active{
+        background-color: #e3f2fd;
+        .link{
+            color: #1976d2;
+        }
+    }
+}
+
+.link{
+    color: #727272;
+    text-decoration:none ;
+    cursor:default;
+}
+
+
+
+
+
+
+
+
+.navBar_phoneScreen{
+    background-color: white;
+    display: none;
+}
+
+.navBar_menuLogoDiv{
+    height: 10dvh;
+    display: flex;
+    align-items: center;
+}
+
+.showMenu{
+    display: flex;
+    height: 90dvh;
+}
+
+.hideMenu{
+    display: none;
+}
+
+.navBar_phoneScreen_open{
+    position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+}
+
+
+
+/*********************************/
+
+@media (max-width: 700px){
+    .navBar_bigScreen{
+        display: none;
+    }
+
+    .navBar_phoneScreen{
+        display: block;
+        border-bottom: 1px solid rgb(203, 202, 202);
+    }
+
+    .navBar_navDiv{
+        flex-direction: column;
+        background-color: white;
+        height: 90dvh;
+    }
+}
+
+
+/******************************************/
+
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+
+.menu_logo{
+    margin-left: 30px;
+}
